@@ -2,7 +2,8 @@
 
 link:  https://yatharthdhawan.github.io/imDB-clone/
 TECH STACK- HTML,CSS,JavaScript
-Concept- API fetch, objects in js
+
+-Concept- API fetch, objects in js
 
 About project 
 -I have made an imdb clone using HTML,CSS,JavaScript in which i have used the concept of **fetch** the data from apis with the help of JS. Moreover, i have added features like - full movie details and poster of movie searched.
