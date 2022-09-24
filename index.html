@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<!-- in body we place a div whic has the search as well as result div section -->
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <div class="container">
+                <p>Yatharth<span> imDB</span></p>
+            </div>
+        </div>
+        <!-- logo section ends  -->
+        <!-- start of the search container -->
+        <div class="search-container">
+            <div class="search-element">
+                <h3>Search Movie:</h3>
+                <input type="text" class="form-control" placeholder="Search Movie ....." id="movie-search-box" onkeyup="findMovies()" onclick="findMovies()">
+
+                <!--the input will show the list of movies which will be appended through js -->
+                <div id="search-list" class="search-list">
+                    <!-- <div class="search-list-item">
+                        <div class="search-item-thumbnail">
+                            <img src="images/medium-cover.jpg" alt="">
+                        </div>
+                        <div class="search-item-info">
+                            <h3>Guardians of the Galaxy</h3>
+                            <p>2017</p>
+                        </div>
+                    </div> -->
+
+                </div>
+
+
+            </div>
+        </div>
+        <!-- end of the search container -->
+
+        <!-- result container whic shows the movie searched -->
+        <div class="container">
+            <div class="result-container">
+                <!-- the movie details and poster will be fetched from api via javascript and then 
+                the details would be shown and listed via js -->
+
+
+                <div id="result-grid" class="result-grid">
+                    <!-- movie information here -->
+                    <!-- <div class="movie-poster">
+                        <img src="images/medium-cover.jpg" alt="movie poster">
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Guardians of the Galaxy </h3>
+                        <ul class="movie-misc-info">
+                            <li class="year">year: 2017</li>
+                            <li class="rated">Ratings: PG-13</li>
+                            <li class="released">Released: 05 May 2017</li>
+                        </ul>
+                        <p class="genre"><b>Genre:</b> Action, Adventure, Comedy</p>
+                        <p class="writer"><b>Writer:</b> James gunn, Do Abnett, Andy Lanning</p>
+                        <p class="actors"><b>Actors</b> Chriss, Zoe, Dave Bautista</p>
+                        <p class="plot"><b>Plot:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
+                            neque non vero repudiandae reprehenderit, dolor accusamus laboriosam deleniti quaerat
+                            pariatur culpa, architecto quod fugiat quae, amet veniam dolorum magni aspernatur!</p>
+                        <p class="language"><b>Language:</b> English</p>
+                        <p class="awards"><b><i class="fa-solid fa-award"></i></b> Nominated for ..</p>
+
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+        <!-- end of the result container -->
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
